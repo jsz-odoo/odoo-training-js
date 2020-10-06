@@ -10,8 +10,8 @@ class Spaceship(models.Model):
     name = fields.Char(string='Spaceship', required=True)
     description = fields.Text(string='A Spaceship')
     
-    dimensions = field.Char(string='dimensions', default='40 x 20')
-    fuel_type = field.Char(string='Fuel Type')
+    dimensions = fields.Char(string='dimensions', default='40 x 20')
+    fuel_type = fields.Char(string='Fuel Type')
     number_of_passengers = fields.Integer(string='Number of Passengers', default=10)
     ship_type = fields.Selection(string='Ship Type',
                                  selection=[('shuttle', 'Shuttle'),
