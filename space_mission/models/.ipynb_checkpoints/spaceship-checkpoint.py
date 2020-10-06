@@ -8,7 +8,7 @@ class Spaceship(models.Model):
     _description = 'Spaceship'
     
     name = fields.Char(string='Spaceship', required=True)
-    description = fields.String(string='A Spaceship')
+    description = fields.Text(string='A Spaceship')
     
     dimensions = field.Char(string='dimensions', default='40 x 20')
     fuel_type = field.Char(string='Fuel Type')
