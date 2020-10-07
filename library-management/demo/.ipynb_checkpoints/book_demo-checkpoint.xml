@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data noupdate="1">
+        <record model="library.book" id="hitchhikers_guide">
+            <field name="title">The Hitchhiker's Guide to the Galaxy</field>
+            <field name="isbn">9781417642595</field>
+            <field name="page_length">216</field>
+        </record>
+    </data>
+</odoo>

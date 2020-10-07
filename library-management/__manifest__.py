@@ -19,5 +19,9 @@
     
     'data': [],
     
-    'demo': []
+    'demo': [
+        'demo/manager_demo.xml',
+        'demo/book_demo.xml',
+        'demo/patron_demo.xml'
+    ]
 }
