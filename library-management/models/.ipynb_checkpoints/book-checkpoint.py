@@ -13,4 +13,4 @@ class Book(models.Model):
                        help="The International Standard Book Number consisting of up to 13 digits (formerly 10)",
                        size=13)
     page_length = fields.Integer(string="Page Length")
-    
+    loaned_out = fields.Boolean(default=False)

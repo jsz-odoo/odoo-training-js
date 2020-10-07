@@ -1,1 +1,7 @@
 id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+manager_admin,manager admin,model_library_manager,group_library_admin,1,1,1,1
+manager_read_all,manager read all,model_library_manager,,1,0,0,0
+book_admin,book admin,model_library_book,group_library_admin,1,1,1,1
+book_read_all,book read all,model_library_book,,1,0,0,0
+patron_admin,patron admin,model_library_patron,group_library_admin,1,1,1,1
+patron_read_all, patron read all,model_library_patron,,1,0,0,0

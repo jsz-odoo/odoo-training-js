@@ -4,4 +4,14 @@
     <record id="group_library_admin" model="res.groups">
         <field name="name">Library / Admin</field>
     </record>
+    
+    <record id="loaned_no_delete" model="ir.rule">
+        <field name="name">Loaned-out books can be modified, but not deleted</field>
+        <field name="perm_read" eval="1" />
+        <field name="perm_write" eval="1" />
+        <field name="perm_create" eval="0" />
+        <field name="perm_unlink" eval="0" />
+        <field name="domain_force">[('loaned_out','=',True)]</field>
+        <field name="model_id" ref="model_library_book" />
+    </record>
 </odoo>
