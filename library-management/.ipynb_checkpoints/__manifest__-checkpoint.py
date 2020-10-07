@@ -17,7 +17,10 @@
     
     'depends': ['base'],
     
-    'data': [],
+    'data': [
+        'security/library_security.xml',
+        'security/ir.model.access.csv'
+    ],
     
     'demo': [
         'demo/manager_demo.xml',
