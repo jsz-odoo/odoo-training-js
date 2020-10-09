@@ -12,6 +12,28 @@
             </field>
         </record>
         
+        <record model="ir.actions.act_window" id="book_list_action">
+            <field name="name">Books</field>
+            <field name="res_model">library.book</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Add a Book
+                </p>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window" id="patron_list_action">
+            <field name="name">Patrons</field>
+            <field name="res_model">library.patron</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Register a Patron
+                </p>
+            </field>
+        </record>
+        
         <menuitem name="Library Manager"
                   id="menu_library"
                   sequence="1" />
@@ -26,6 +48,17 @@
                   parent="menu_library_sub"
                   sequence="3" 
                   action="manager_list_action" />
-                  
+        
+        <menuitem name="Books"
+                  id="menu_library_book"
+                  parent="menu_library_sub"
+                  sequence="4"
+                  action="book_list_action" />
+        
+        <menuitem name="Patrons"
+                  id="menu_library_book"
+                  parent="menu_library_sub"
+                  sequence="5"
+                  action="patron_list_action" />
     </data>
 </odoo>
