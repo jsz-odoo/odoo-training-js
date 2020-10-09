@@ -56,7 +56,7 @@
                   action="book_list_action" />
         
         <menuitem name="Patrons"
-                  id="menu_library_book"
+                  id="menu_library_patron"
                   parent="menu_library_sub"
                   sequence="5"
                   action="patron_list_action" />

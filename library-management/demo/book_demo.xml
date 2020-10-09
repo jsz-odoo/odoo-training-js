@@ -5,7 +5,8 @@
         <record model="library.book" id="hitchhikers_guide">
             <field name="title">The Hitchhiker's Guide to the Galaxy</field>
             <field name="isbn">9781417642595</field>
-            <field name="page_length">216</field>
+            <field name="page_length" type="int">216</field>
+            <field name="loaned_out">True</field>
         </record>
     </data>
 </odoo>

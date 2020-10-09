@@ -9,7 +9,7 @@ class Patron(models.Model):
     
     first_name = fields.Char(string="First Name", required=True, default="New")
     last_name = fields.Char(string="Last Name", required="True", default="Patron")
-    name = fields.Char(computed="_compute_full_name")
+    name = fields.Char(compute="_compute_full_name")
     email = fields.Char(string="Email Address", required=True)
     phone_number = fields.Char(string="Phone Number")
     
