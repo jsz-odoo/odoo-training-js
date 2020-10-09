@@ -20,7 +20,10 @@
     'data': [
         'security/library_security.xml',
         'security/ir.model.access.csv',
-        'views/library_management_menuitems.xml'
+        'views/library_management_menuitems.xml',
+        'views/manager_views.xml',
+        'views/book_views.xml',
+        'views/patron_views.xml'
     ],
     
     'demo': [

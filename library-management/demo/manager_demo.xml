@@ -19,7 +19,7 @@
         </record>
         
         <record model="library.manager" id="university_library">
-            <field name="name">Univerity Library</field>
+            <field name="name">University Library</field>
             <field name="description">
                 University Library
                 Best place to study!  Free snacks...
