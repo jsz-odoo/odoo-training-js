@@ -9,8 +9,8 @@
                 <form string="Patron Form">
                     <sheet>
                         <group>
-                            <h1><field name="first_name" /></h1>
-                            <h1><field name="last_name" /></h1>
+                            <h1><field name="first_name" placeholder="First" /></h1>
+                            <h1><field name="last_name" placeholder="Last" /></h1>
                         </group>
                         <group>
                             <group>

@@ -7,8 +7,8 @@ class Patron(models.Model):
     _name = 'library.patron'
     _description = 'Library Patron'
     
-    first_name = fields.Char(string="First Name", required=True, default="New")
-    last_name = fields.Char(string="Last Name", required="True", default="Patron")
+    first_name = fields.Char(string="First Name", required=True)
+    last_name = fields.Char(string="Last Name", required="True")
     name = fields.Char(compute="_compute_full_name")
     email = fields.Char(string="Email Address", required=True)
     phone_number = fields.Char(string="Phone Number")
