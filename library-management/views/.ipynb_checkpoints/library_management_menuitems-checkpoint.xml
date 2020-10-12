@@ -34,6 +34,17 @@
             </field>
         </record>
         
+        <record model="ir.actions.act_window" id="loan_list_action">
+            <field name="name">Loans</field>
+            <field name="res_model">library.loan</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Add a loan
+                </p>
+            </field>
+        </record>
+        
         <menuitem name="Library Manager"
                   id="menu_library"
                   sequence="1" />
@@ -60,5 +71,11 @@
                   parent="menu_library_sub"
                   sequence="5"
                   action="patron_list_action" />
+        
+        <menuitem name="Loans"
+                  id="menu_library_loan"
+                  parent="menu_library_sub"
+                  sequence="6"
+                  action="loan_list_action" />
     </data>
 </odoo>

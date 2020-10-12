@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="loan_view_form">
+            <field name="name">library.loan.form</field>
+            <field name="model">library.loan</field>
+            <field name="arch" type="xml">
+                <form string="Loan Form">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name" placeholder="Title"/>
+                            </group>
+                            <group>
+                                <field name="patron_id" />
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Assets">
+                                <field name="asset_ids" />
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="loan_view_list">
+            <field name="name">library.loan.list</field>
+            <field name="model">library.loan</field>
+            <field name="arch" type="xml">
+                <tree string="Loan List">
+                    <field name="name" />
+                    <field name="patron_id" />
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -8,14 +8,18 @@ class Book(models.Model):
     _name = 'library.book'
     _description = 'Library Book'
     
-    name = fields.Char(string="Name", default="Book")
-    title = fields.Text(string="Title", required=True)
+    name = fields.Char(string="Title", required=True)
+    
     isbn = fields.Char(string="ISBN", 
                        required=True,
                        help="The International Standard Book Number consisting of up to 13 digits (formerly 10)",
                        size=13)
+    
     page_length = fields.Integer(string="Pages", default=0)
+    
     loaned_out = fields.Boolean(string="Loaned", default=False)
+    
+    loan_ids = fields.Many2many(comodel_name="library.loan", string="Loans")
     
     @api.constrains("isbn")
     def _check_isbn_length(self):

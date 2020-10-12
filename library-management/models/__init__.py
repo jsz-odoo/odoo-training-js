@@ -3,3 +3,4 @@
 from . import manager
 from . import book
 from . import patron
+from . import loan

@@ -23,7 +23,8 @@
         'views/library_management_menuitems.xml',
         'views/manager_views.xml',
         'views/book_views.xml',
-        'views/patron_views.xml'
+        'views/patron_views.xml',
+        'views/loan_views.xml'
     ],
     
     'demo': [

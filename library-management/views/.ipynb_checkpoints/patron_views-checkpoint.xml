@@ -20,6 +20,11 @@
                                 <field name="phone_number" />
                             </group>
                         </group>
+                        <notebook>
+                            <page string="Loans">
+                                <field name="loan_ids" />
+                            </page>
+                        </notebook>
                     </sheet>
                 </form>
             </field>

@@ -8,7 +8,7 @@
             <field name="arch" type="xml">
                 <form string="Book Form">
                     <sheet>
-                        <h1><field name="title" placeholder="Title" /></h1>
+                        <h1><field name="name" placeholder="Title" /></h1>
                         <group>
                             <group>
                                 <field name="isbn" />
@@ -20,6 +20,11 @@
                                 <field name="loaned_out" />
                             </group>
                         </group>
+                        <notebook>
+                            <page string="Loans">
+                                <field name="loan_ids" />
+                            </page>
+                        </notebook>
                     </sheet>
                 </form>
             </field>
@@ -30,7 +35,7 @@
             <field name="model">library.book</field>
             <field name="arch" type="xml">
                 <tree string="Book List">
-                    <field name="title" />
+                    <field name="name" />
                     <field name="isbn" />
                     <field name="page_length" />
                     <field name="loaned_out" />
@@ -43,7 +48,7 @@
             <field name="model">library.book</field>
             <field name="arch" type="xml">
                 <search>
-                    <field name="title" />
+                    <field name="name" />
                     <field name="isbn" />
                     <field name="loaned_out" />
                 </search>
