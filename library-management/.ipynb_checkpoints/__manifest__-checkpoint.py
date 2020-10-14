@@ -15,7 +15,7 @@
     
     'author': 'Johnny Sanchez',
     
-    'depends': ['base'],
+    'depends': ['sale_management'],
     
     'data': [
         'security/library_security.xml',
@@ -24,7 +24,8 @@
         'views/manager_views.xml',
         'views/book_views.xml',
         'views/patron_views.xml',
-        'views/loan_views.xml'
+        'views/loan_views.xml',
+        'views/sale_views_inherit.xml'
     ],
     
     'demo': [
