@@ -50,11 +50,15 @@
                             <tbody>
                                 <t t-foreach="doc.asset_ids" t-as="asset">
                                     <tr>
-                                        <td t-if="asset.name" name="td_name">
-                                            <span t-field="asset.name" />
+                                        <td name="td_name">
+                                            <t t-if="asset.name">
+                                                <span t-field="asset.name" />
+                                            </t>
                                         </td>
-                                        <td t-if="asset.isbn" name="td_isbn">
-                                            <span t-field="asset.isbn" />
+                                        <td name="td_isbn">
+                                            <t t-if="asset.isbn">
+                                                <span t-field="asset.isbn" />
+                                            </t>
                                         </td>
                                     </tr>
                                 </t>
