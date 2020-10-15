@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+<!--     <report
+            id="report_loan"
+            model="library.loan"
+            string="Loan Report"
+            name="library-management.report_loan_document"
+            file="library-management.report_loan"
+            report_type="qweb-html" /> -->
+    
+    <record model="ir.actions.report" id="library_loan_report">
+        <field name="name">library-management.report_loan_document</field>
+        <field name="model">libary.loan</field>
+        <field name="report_type">qweb-html</field>
+        <field name="report_name">library-management.report_loan</field>
+        <field name="binding_model_id" ref="model_library_loan" />
+    </record>
+    
+    <template id="report_loan_document">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h2 t-field="doc.name" class="mt16" />
+                        <div class="row mt32 mb32" id="loan_info">
+                            <div class="col-auto mw-100 mb-2">
+                                <strong>Loan Duration:</strong>
+                                <t t-if="doc.start_date">
+                                    <span t-field="doc.start_date" />
+                                </t>
+                                to
+                                <t t-if="doc.end_date">
+                                    <span t-field="doc.end_date" />
+                                </t>
+                            </div>
+                            <div t-if="doc.patron_id" class="col-auto mw-100 mb-2">
+                                <strong>Patron:</strong>
+                                <span t-field="doc.patron_id.name" />
+                            </div>
+                        </div>
+                        <h4>Books</h4>
+                        <table class="table table-sm o_main_table">
+                            <thead>
+                                <tr>
+                                    <th name="th_name">Name</th>
+                                    <th name="th_isbn">ISBN</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="doc.asset_ids" t-as="asset">
+                                    <tr>
+                                        <td t-if="asset.name" name="td_name">
+                                            <span t-field="asset.name" />
+                                        </td>
+                                        <td t-if="asset.isbn" name="td_isbn">
+                                            <span t-field="asset.isbn" />
+                                        </td>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>
