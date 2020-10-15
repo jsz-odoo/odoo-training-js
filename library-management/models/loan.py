@@ -32,6 +32,9 @@ class Loan(models.Model):
                            inverse="_inverse_end_date",
                            store=True)
     
+    late_fee = fields.Float(string="Late Fee",
+                            related="asset_ids.fee")
+    
     @api.depends("start_date", "duration")
     def _compute_end_date(self):
         for record in self:

@@ -21,6 +21,8 @@ class Book(models.Model):
     
     loan_ids = fields.Many2many(comodel_name="library.loan", string="Loans")
     
+    fee = fields.Float(string="Fee", default=0.00)
+    
     @api.constrains("isbn")
     def _check_isbn_length(self):
         for record in self:

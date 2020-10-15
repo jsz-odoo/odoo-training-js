@@ -7,3 +7,5 @@ patron_admin,patron admin,model_library_patron,group_library_admin,1,1,1,1
 patron_read_all, patron read all,model_library_patron,,1,0,0,0
 loan_admin,loan admin,model_library_loan,group_library_admin,1,1,1,1
 loan_read_all,loan read all,model_library_loan,,1,0,0,0
+sale_wizard_admin,sale wizard,model_library_sale_wizard,group_library_admin,1,1,1,1
+sale_wizard_read_all,sale wizard read all,model_library_sale_wizard,,1,0,0,0

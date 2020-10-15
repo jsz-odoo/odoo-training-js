@@ -5,3 +5,4 @@ from . import book
 from . import patron
 from . import loan
 from . import sale_order
+from . import product_template
