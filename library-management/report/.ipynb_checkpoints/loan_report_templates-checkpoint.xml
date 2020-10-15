@@ -11,9 +11,9 @@
     
     <record model="ir.actions.report" id="library_loan_report">
         <field name="name">library-management.report_loan_document</field>
-        <field name="model">libary.loan</field>
+        <field name="model">library.loan</field>
         <field name="report_type">qweb-html</field>
-        <field name="report_name">library-management.report_loan</field>
+        <field name="report_name">library-management.report_loan_document</field>
         <field name="binding_model_id" ref="model_library_loan" />
     </record>
     
