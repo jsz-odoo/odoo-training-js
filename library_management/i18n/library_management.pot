@@ -1,0 +1,515 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* library_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-17 00:59+0000\n"
+"PO-Revision-Date: 2020-10-17 00:59+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: library_management
+#: model_terms:ir.ui.view,arch_db:library_management.report_loan_document
+msgid "<strong>Loan Duration:</strong>"
+msgstr ""
+
+#. module: library_management
+#: model_terms:ir.ui.view,arch_db:library_management.asset_website
+msgid "<strong>Loans</strong>"
+msgstr ""
+
+#. module: library_management
+#: model_terms:ir.ui.view,arch_db:library_management.report_loan_document
+msgid "<strong>Patron:</strong>"
+msgstr ""
+
+#. module: library_management
+#: model_terms:ir.actions.act_window,help:library_management.book_list_action
+msgid "Add a Book"
+msgstr ""
+
+#. module: library_management
+#: model_terms:ir.actions.act_window,help:library_management.loan_list_action
+msgid "Add a loan"
+msgstr ""
+
+#. module: library_management
+#: model_terms:ir.ui.view,arch_db:library_management.asset_website
+#: model_terms:ir.ui.view,arch_db:library_management.loan_view_form
+#: model_terms:ir.ui.view,arch_db:library_management.loan_website
+msgid "Assets"
+msgstr ""
+
+#. module: library_management
+#: model_terms:ir.ui.view,arch_db:library_management.book_view_form
+msgid "Book Form"
+msgstr ""
+
+#. module: library_management
+#: model_terms:ir.ui.view,arch_db:library_management.book_view_list
+msgid "Book List"
+msgstr ""
+
+#. module: library_management
+#: model:ir.actions.act_window,name:library_management.book_list_action
+#: model:ir.model.fields,field_description:library_management.field_library_loan__asset_ids
+#: model:ir.model.fields,field_description:library_management.field_sale_order__asset_ids
+#: model:ir.ui.menu,name:library_management.menu_library_book
+#: model_terms:ir.ui.view,arch_db:library_management.report_loan_document
+#: model_terms:ir.ui.view,arch_db:library_management.view_order_form_inherit_library
+msgid "Books"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,field_description:library_management.field_library_sale_wizard__asset_ids
+msgid "Books for Loan Order"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,field_description:library_management.field_library_sale_wizard__loan_asset_ids
+msgid "Books in Current Loan"
+msgstr ""
+
+#. module: library_management
+#: model_terms:ir.ui.view,arch_db:library_management.library_sale_wizard_form_view
+msgid "Cancel"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,help:library_management.field_product_product__is_loan_product
+#: model:ir.model.fields,help:library_management.field_product_template__is_loan_product
+msgid "Check this box to use this as a Product for Loan"
+msgstr ""
+
+#. module: library_management
+#: model_terms:ir.ui.view,arch_db:library_management.library_sale_wizard_form_view
+msgid "Create"
+msgstr ""
+
+#. module: library_management
+#: model:ir.actions.act_window,name:library_management.library_loan_launch_wizard
+msgid "Create Loan Order"
+msgstr ""
+
+#. module: library_management
+#: model_terms:ir.ui.view,arch_db:library_management.library_sale_wizard_form_view
+msgid "Create Sale Order for Loan"
+msgstr ""
+
+#. module: library_management
+#: model_terms:ir.actions.act_window,help:library_management.manager_list_action
+msgid "Create a Manager"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,field_description:library_management.field_library_book__create_uid
+#: model:ir.model.fields,field_description:library_management.field_library_loan__create_uid
+#: model:ir.model.fields,field_description:library_management.field_library_manager__create_uid
+#: model:ir.model.fields,field_description:library_management.field_library_patron__create_uid
+#: model:ir.model.fields,field_description:library_management.field_library_sale_wizard__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,field_description:library_management.field_library_book__create_date
+#: model:ir.model.fields,field_description:library_management.field_library_loan__create_date
+#: model:ir.model.fields,field_description:library_management.field_library_manager__create_date
+#: model:ir.model.fields,field_description:library_management.field_library_patron__create_date
+#: model:ir.model.fields,field_description:library_management.field_library_sale_wizard__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,field_description:library_management.field_library_loan__description
+#: model:ir.model.fields,field_description:library_management.field_library_manager__description
+#: model_terms:ir.ui.view,arch_db:library_management.manager_view_form
+msgid "Description"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,field_description:library_management.field_library_book__display_name
+#: model:ir.model.fields,field_description:library_management.field_library_loan__display_name
+#: model:ir.model.fields,field_description:library_management.field_library_manager__display_name
+#: model:ir.model.fields,field_description:library_management.field_library_patron__display_name
+#: model:ir.model.fields,field_description:library_management.field_library_sale_wizard__display_name
+#: model:ir.model.fields,field_description:library_management.field_product_template__display_name
+#: model:ir.model.fields,field_description:library_management.field_sale_order__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,field_description:library_management.field_library_patron__email
+msgid "Email Address"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,field_description:library_management.field_library_loan__end_date
+msgid "End Date"
+msgstr ""
+
+#. module: library_management
+#: model_terms:ir.ui.view,arch_db:library_management.loan_website
+msgid "End Date:"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,field_description:library_management.field_library_book__fee
+msgid "Fee"
+msgstr ""
+
+#. module: library_management
+#: model_terms:ir.ui.view,arch_db:library_management.patron_view_form
+msgid "First"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,field_description:library_management.field_library_patron__first_name
+msgid "First Name"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,field_description:library_management.field_library_book__id
+#: model:ir.model.fields,field_description:library_management.field_library_loan__id
+#: model:ir.model.fields,field_description:library_management.field_library_manager__id
+#: model:ir.model.fields,field_description:library_management.field_library_patron__id
+#: model:ir.model.fields,field_description:library_management.field_library_sale_wizard__id
+#: model:ir.model.fields,field_description:library_management.field_product_template__id
+#: model:ir.model.fields,field_description:library_management.field_sale_order__id
+msgid "ID"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,field_description:library_management.field_library_book__isbn
+#: model_terms:ir.ui.view,arch_db:library_management.report_loan_document
+msgid "ISBN"
+msgstr ""
+
+#. module: library_management
+#: model_terms:ir.ui.view,arch_db:library_management.asset_website
+#: model_terms:ir.ui.view,arch_db:library_management.loan_website
+msgid "ISBN:"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,field_description:library_management.field_library_loan__active
+msgid "Is Active"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,field_description:library_management.field_sale_order__is_taxcloud_configured
+msgid "Is Taxcloud Configured"
+msgstr ""
+
+#. module: library_management
+#: model_terms:ir.ui.view,arch_db:library_management.patron_view_form
+msgid "Last"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,field_description:library_management.field_library_book____last_update
+#: model:ir.model.fields,field_description:library_management.field_library_loan____last_update
+#: model:ir.model.fields,field_description:library_management.field_library_manager____last_update
+#: model:ir.model.fields,field_description:library_management.field_library_patron____last_update
+#: model:ir.model.fields,field_description:library_management.field_library_sale_wizard____last_update
+#: model:ir.model.fields,field_description:library_management.field_product_template____last_update
+#: model:ir.model.fields,field_description:library_management.field_sale_order____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: library_management
+#: model_terms:ir.ui.view,arch_db:library_management.asset_website
+#: model_terms:ir.ui.view,arch_db:library_management.loan_website
+msgid "Last Modified:"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,field_description:library_management.field_library_patron__last_name
+msgid "Last Name"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,field_description:library_management.field_library_book__write_uid
+#: model:ir.model.fields,field_description:library_management.field_library_loan__write_uid
+#: model:ir.model.fields,field_description:library_management.field_library_manager__write_uid
+#: model:ir.model.fields,field_description:library_management.field_library_patron__write_uid
+#: model:ir.model.fields,field_description:library_management.field_library_sale_wizard__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,field_description:library_management.field_library_book__write_date
+#: model:ir.model.fields,field_description:library_management.field_library_loan__write_date
+#: model:ir.model.fields,field_description:library_management.field_library_manager__write_date
+#: model:ir.model.fields,field_description:library_management.field_library_patron__write_date
+#: model:ir.model.fields,field_description:library_management.field_library_sale_wizard__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,field_description:library_management.field_library_loan__late_fee
+msgid "Late Fee"
+msgstr ""
+
+#. module: library_management
+#: model_terms:ir.ui.view,arch_db:library_management.asset_website
+msgid "Library"
+msgstr ""
+
+#. module: library_management
+#: model:res.groups,name:library_management.group_library_admin
+msgid "Library / Admin"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model,name:library_management.model_library_book
+msgid "Library Book"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model,name:library_management.model_library_loan
+msgid "Library Loan"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model,name:library_management.model_library_manager
+#: model:ir.ui.menu,name:library_management.menu_library
+msgid "Library Manager"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model,name:library_management.model_library_patron
+msgid "Library Patron"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,field_description:library_management.field_library_loan__name
+#: model:ir.model.fields,field_description:library_management.field_library_sale_wizard__loan_id
+#: model_terms:ir.ui.view,arch_db:library_management.loan_website
+msgid "Loan"
+msgstr ""
+
+#. module: library_management
+#: model_terms:ir.ui.view,arch_db:library_management.loan_view_calendar
+msgid "Loan Calendar"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,field_description:library_management.field_library_loan__duration
+msgid "Loan Duration"
+msgstr ""
+
+#. module: library_management
+#: model_terms:ir.ui.view,arch_db:library_management.loan_view_form
+msgid "Loan Form"
+msgstr ""
+
+#. module: library_management
+#: model_terms:ir.ui.view,arch_db:library_management.loan_view_list
+msgid "Loan List"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,field_description:library_management.field_library_book__loaned_out
+msgid "Loaned"
+msgstr ""
+
+#. module: library_management
+#: model:ir.actions.act_window,name:library_management.loan_list_action
+#: model:ir.model.fields,field_description:library_management.field_library_book__loan_ids
+#: model:ir.model.fields,field_description:library_management.field_library_patron__loan_ids
+#: model:ir.ui.menu,name:library_management.menu_library_loan
+#: model_terms:ir.ui.view,arch_db:library_management.book_view_form
+#: model_terms:ir.ui.view,arch_db:library_management.patron_view_form
+msgid "Loans"
+msgstr ""
+
+#. module: library_management
+#: model:ir.ui.menu,name:library_management.menu_library_sub
+msgid "Manage"
+msgstr ""
+
+#. module: library_management
+#: model_terms:ir.ui.view,arch_db:library_management.manager_view_form
+msgid "Manager Form"
+msgstr ""
+
+#. module: library_management
+#: model_terms:ir.ui.view,arch_db:library_management.manager_view_list
+msgid "Manager List"
+msgstr ""
+
+#. module: library_management
+#: model:ir.actions.act_window,name:library_management.manager_list_action
+#: model:ir.ui.menu,name:library_management.menu_library_manager
+msgid "Managers"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,field_description:library_management.field_library_manager__name
+#: model:ir.model.fields,field_description:library_management.field_library_patron__name
+#: model_terms:ir.ui.view,arch_db:library_management.report_loan_document
+msgid "Name"
+msgstr ""
+
+#. module: library_management
+#: model_terms:ir.ui.view,arch_db:library_management.loan_website
+msgid "Name:"
+msgstr ""
+
+#. module: library_management
+#: model_terms:ir.ui.view,arch_db:library_management.asset_website
+msgid "No current loans"
+msgstr ""
+
+#. module: library_management
+#: code:addons/library_management/models/.ipynb_checkpoints/book-checkpoint.py:0
+#: code:addons/library_management/models/book.py:0
+#, python-format
+msgid "Number of pages cannot be negative."
+msgstr ""
+
+#. module: library_management
+#: model_terms:ir.ui.view,arch_db:library_management.asset_website
+msgid "Page Length:"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,field_description:library_management.field_library_book__page_length
+msgid "Pages"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,field_description:library_management.field_library_loan__patron_id
+#: model:ir.model.fields,field_description:library_management.field_sale_order__patron_id
+msgid "Patron"
+msgstr ""
+
+#. module: library_management
+#: model_terms:ir.ui.view,arch_db:library_management.patron_view_form
+msgid "Patron Form"
+msgstr ""
+
+#. module: library_management
+#: model_terms:ir.ui.view,arch_db:library_management.patron_view_list
+msgid "Patron List"
+msgstr ""
+
+#. module: library_management
+#: model:ir.actions.act_window,name:library_management.patron_list_action
+#: model:ir.ui.menu,name:library_management.menu_library_patron
+msgid "Patrons"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,field_description:library_management.field_library_patron__phone_number
+msgid "Phone Number"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model,name:library_management.model_product_template
+msgid "Product Template"
+msgstr ""
+
+#. module: library_management
+#: model_terms:ir.actions.act_window,help:library_management.patron_list_action
+msgid "Register a Patron"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,field_description:library_management.field_sale_order__loan_id
+msgid "Related Loan"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model,name:library_management.model_sale_order
+msgid "Sales Order"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,field_description:library_management.field_library_loan__start_date
+msgid "Start Date"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,help:library_management.field_sale_order__is_taxcloud
+msgid "Technical field to determine whether to hide taxes in views or not."
+msgstr ""
+
+#. module: library_management
+#: code:addons/library_management/models/.ipynb_checkpoints/book-checkpoint.py:0
+#: code:addons/library_management/models/book.py:0
+#, python-format
+msgid ""
+"The ISBN has to be between 10 and 13 digits in length, current length is: %s"
+msgstr ""
+
+#. module: library_management
+#: code:addons/library_management/models/.ipynb_checkpoints/book-checkpoint.py:0
+#: code:addons/library_management/models/book.py:0
+#: model:ir.model.fields,help:library_management.field_library_book__isbn
+#, python-format
+msgid ""
+"The International Standard Book Number consisting of up to 13 digits "
+"(formerly 10)"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,help:library_management.field_library_sale_wizard__loan_asset_ids
+msgid "These are the Books currently on the Loan"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,field_description:library_management.field_library_book__name
+#: model_terms:ir.ui.view,arch_db:library_management.book_view_form
+#: model_terms:ir.ui.view,arch_db:library_management.loan_view_form
+msgid "Title"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,field_description:library_management.field_sale_order__is_taxcloud
+msgid "Use TaxCloud API"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,field_description:library_management.field_product_product__is_loan_product
+#: model:ir.model.fields,field_description:library_management.field_product_template__is_loan_product
+msgid "Use as Loan Product"
+msgstr ""
+
+#. module: library_management
+#: model:ir.model.fields,help:library_management.field_sale_order__is_taxcloud_configured
+msgid ""
+"Used to determine whether or not to warn the user to configure TaxCloud."
+msgstr ""
+
+#. module: library_management
+#: model:ir.model,name:library_management.model_library_sale_wizard
+msgid "Wizard: Loan Order for Library Patrons"
+msgstr ""
+
+#. module: library_management
+#: model_terms:ir.ui.view,arch_db:library_management.manager_view_form
+msgid "e.g. Central Library"
+msgstr ""
+
+#. module: library_management
+#: model:ir.actions.report,name:library_management.library_loan_report
+msgid "library_management.report_loan_document"
+msgstr ""
+
+#. module: library_management
+#: model_terms:ir.ui.view,arch_db:library_management.library_sale_wizard_form_view
+msgid "or"
+msgstr ""
+
+#. module: library_management
+#: model_terms:ir.ui.view,arch_db:library_management.report_loan_document
+msgid "to"
+msgstr ""
