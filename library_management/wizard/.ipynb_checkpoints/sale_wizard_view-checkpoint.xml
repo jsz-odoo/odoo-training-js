@@ -22,12 +22,6 @@
             </field>
         </record>
         
-<!--         <act_window id="launch_sale_wizard"
-                    name="Create Loan Order"
-                    binding_model="library.loan"
-                    res_model="library.sale.wizard"
-                    view_mode="form"
-                    target="new" /> -->
         <record id="library_loan_launch_wizard" model="ir.actions.act_window">
             <field name="name">Create Loan Order</field>
             <field name="res_model">library.sale.wizard</field>

@@ -15,7 +15,7 @@ class Library(http.Controller):
         
         assets = http.request.env['library.book'].search([])
         
-        return http.request.render('library-management.asset_website', {
+        return http.request.render('library_management.asset_website', {
             'assets': assets,
         })
                 
@@ -23,6 +23,6 @@ class Library(http.Controller):
     @http.route('/library/<model("library.loan"):loan>/', auth='public', website=True)
     def loan(self, loan):
         
-        return http.request.render('library-management.loan_website', {
+        return http.request.render('library_management.loan_website', {
             'loan': loan,
         })

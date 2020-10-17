@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <odoo>
-<!--     <report
-            id="report_loan"
-            model="library.loan"
-            string="Loan Report"
-            name="library-management.report_loan_document"
-            file="library-management.report_loan"
-            report_type="qweb-html" /> -->
-    
     <record model="ir.actions.report" id="library_loan_report">
-        <field name="name">library-management.report_loan_document</field>
+        <field name="name">library_management.report_loan_document</field>
         <field name="model">library.loan</field>
         <field name="report_type">qweb-html</field>
-        <field name="report_name">library-management.report_loan_document</field>
+        <field name="report_name">library_management.report_loan_document</field>
         <field name="binding_model_id" ref="model_library_loan" />
     </record>
     
