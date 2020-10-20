@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data>
+        <template id="asset_website">
+            <t t-call="website.layout">
+                <t t-set="title">Library</t>
+                <div class="oe_structure">
+                    <div class="container">
+                        <h1>Assets</h1>
+                        <t t-foreach="assets" t-as="asset">
+                            <h3>
+                                <t t-esc="asset.id" />
+                                <t t-esc="asset.name" />
+                            </h3>
+                            <p>
+                                Page Length:
+                                <span t-field="asset.page_length" />
+                            </p>
+                            
+                            <p>
+                                ISBN:
+                                <span t-field="asset.isbn" />
+                            </p>
+                            
+                            <strong>Loans</strong>
+                            <t t-foreach="asset.loan_ids" t-as="loan">
+                                <p>
+                                    <a t-attf-href="/library/{{slug(loan)}}">
+                                        <t t-esc="loan.name" />
+                                    </a>
+                                </p>
+                                <p>
+                                    Last Modified:
+                                    <i t-field="loan.write_date" t-field-options="{'format': 'long'}" />
+                                </p>
+                            </t>
+                            <t t-if="not asset.loan_ids">
+                                <p>No current loans</p>
+                            </t>
+                        </t>
+                    </div>
+                </div>
+            </t>
+        </template>
+        
+        <template id="loan_website">
+            <t t-call="website.layout">
+                <t t-set="title">Loan</t>
+                <div class="oe_structure">
+                    <div class="container">
+                        <h3 t-field="loan.name" />
+                        <p>
+                            Last Modified:
+                            <i t-field="loan.write_date" t-field-options="{'format': 'long'}" />
+                        </p>
+                        <h3>Assets</h3>
+                        <p>
+                            <t t-if="loan.asset_ids">
+                                <t t-foreach="loan.asset_ids" t-as="asset">
+                                    <p>
+                                        Name:
+                                        <t t-esc="asset.name" />
+                                    </p>
+                                    <p>
+                                        ISBN:
+                                        <t t-esc="asset.isbn" />
+                                    </p>
+                                    <p>
+                                        End Date:
+                                        <t t-esc="loan.end_date" />
+                                    </p>
+                                </t>
+                            </t>
+                        </p>
+                    </div>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="loan_view_form">
+            <field name="name">library.loan.form</field>
+            <field name="model">library.loan</field>
+            <field name="arch" type="xml">
+                <form string="Loan Form">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name" placeholder="Title"/>
+                                <field name="patron_id" />
+                            </group>
+                            <group>
+                                <field name="start_date" />
+                                <field name="end_date" />
+                                <field name="duration" />
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Assets">
+                                <field name="asset_ids" />
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="loan_view_list">
+            <field name="name">library.loan.list</field>
+            <field name="model">library.loan</field>
+            <field name="arch" type="xml">
+                <tree string="Loan List">
+                    <field name="name" />
+                    <field name="patron_id" />
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="loan_view_calendar">
+            <field name="name">library.loan.calendar</field>
+            <field name="model">library.loan</field>
+            <field name="arch" type="xml">
+                <calendar string="Loan Calendar"
+                          date_start="start_date"
+                          date_stop="end_date"
+                          color="patron_id"
+                          mode="month">
+                    <field name="name" />
+                    <field name="patron_id" />
+                </calendar>
+            </field>
+        </record>
+    </data>
+</odoo>

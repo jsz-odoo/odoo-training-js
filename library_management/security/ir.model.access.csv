@@ -1,0 +1,11 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+manager_admin,manager admin,model_library_manager,group_library_admin,1,1,1,1
+manager_read_all,manager read all,model_library_manager,,1,0,0,0
+book_admin,book admin,model_library_book,group_library_admin,1,1,1,1
+book_read_all,book read all,model_library_book,,1,0,0,0
+patron_admin,patron admin,model_library_patron,group_library_admin,1,1,1,1
+patron_read_all, patron read all,model_library_patron,,1,0,0,0
+loan_admin,loan admin,model_library_loan,group_library_admin,1,1,1,1
+loan_read_all,loan read all,model_library_loan,,1,0,0,0
+sale_wizard_admin,sale wizard,model_library_sale_wizard,group_library_admin,1,1,1,1
+sale_wizard_read_all,sale wizard read all,model_library_sale_wizard,,1,0,0,0

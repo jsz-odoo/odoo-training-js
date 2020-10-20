@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data noupdate="1">
+        <record model="library.manager" id="capitol_library">
+            <field name="name">Capitol Library</field>
+            <field name="description">
+                Capitol Library
+                Located at the heart of the capitol!
+            </field>
+        </record>
+        
+        <record model="library.manager" id="alexandria_library">
+            <field name="name">Alexandria Library</field>
+            <field name="description">
+                Alexandria Library
+                The world's font of knowledge.
+            </field>
+        </record>
+        
+        <record model="library.manager" id="university_library">
+            <field name="name">University Library</field>
+            <field name="description">
+                University Library
+                Best place to study!  Free snacks...
+            </field>
+        </record>
+    </data>
+</odoo>

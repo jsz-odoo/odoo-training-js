@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="patron_view_form">
+            <field name="name">library.patron.form</field>
+            <field name="model">library.patron</field>
+            <field name="arch" type="xml">
+                <form string="Patron Form">
+                    <sheet>
+                        <group>
+                            <h1><field name="first_name" placeholder="First" /></h1>
+                            <h1><field name="last_name" placeholder="Last" /></h1>
+                        </group>
+                        <group>
+                            <group>
+                                <field name="email" />
+                            </group>
+                            <group>
+                                <field name="phone_number" />
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Loans">
+                                <field name="loan_ids" />
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="patron_view_list">
+            <field name="name">library.patron.list</field>
+            <field name="model">library.patron</field>
+            <field name="arch" type="xml">
+                <tree string="Patron List">
+                    <field name="first_name" />
+                    <field name="last_name" />
+                    <field name="email" />
+                    <field name="phone_number" />
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="patron_view_search">
+            <field name="name">library.patron.search</field>
+            <field name="model">library.patron</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="first_name" />
+                    <field name="last_name" />
+                    <field name="email" />
+                    <field name="phone_number" />
+                </search>
+            </field>
+        </record>
+    </data>
+</odoo>
